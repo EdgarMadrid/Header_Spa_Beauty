@@ -1,0 +1,16 @@
+@use "../abstracts/mixins" as m;
+@use "../abstracts/_variables" as v;
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  @include m.flex-center;
+
+  &__content {
+    background: white;
+    padding: 20px;
+    border-radius: v.$radius-md;
+    width: 400px;
+  }
+}

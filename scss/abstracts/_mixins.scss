@@ -1,0 +1,20 @@
+@use "../abstracts/_variables" as v;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button-base {
+  border: none;
+  cursor: pointer;
+  border-radius: v.$radius-sm;
+  transition: 0.2s ease;
+}
+
+@mixin responsive($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}

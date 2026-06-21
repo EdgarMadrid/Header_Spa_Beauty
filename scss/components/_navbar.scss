@@ -1,0 +1,15 @@
+@use "../abstracts/_variables" as v;
+
+.navbar {
+  display: flex;
+  gap: 20px;
+
+  &__link {
+    text-decoration: none;
+    color: v.$text;
+
+    &:hover {
+      color: v.$primary;
+    }
+  }
+}
